@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:refresh_token_example/core/app_service.dart';
 import 'package:refresh_token_example/ui/main_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  AppService.instance.initialize();
   runApp(const MyApp());
 }
 
